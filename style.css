@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Spartan;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+.attribution a {color: hsl(228, 45%, 44%);}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+}
+
+.containerbox{
+    width: 1100px;
+    background: url(images/bg-pattern-top-desktop.svg),
+                url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left,  bottom right;
+    background-size: 300px , 800px 500px;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.headbox h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 3em;
+    margin: 0px 5px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.headbox p{
+    margin-top: 0px;
+    padding: 10px;
+    color: hsl(303, 10%, 53%);
+}
+
+.rb{
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 20px;
+    margin: 10px;
+    width: 420px;
+    position: relative;
+    border-radius: 5px;
+    color: hsl(300, 43%, 22%);
+}
+
+.rbdiv{display: inline-block;}
+.rb2{left: 40px;}
+.rb3{left: 80px;}
+.rbimg{margin-right: 15px;}
+
+.megabox1{
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.ibimg{
+    width: 40px;
+    margin-right: 15px;
+    border-radius: 30px;
+    float: left;
+}
+
+.mini{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+ 
+.megabox2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 5px;
+}
+
+.m2{bottom: -15px;}
+.m3{bottom: -30px;}
+
+.mp{
+    font-size: 13px;
+    padding: 5px;
+}
+
+.pink{color: hsl(333, 80%, 67%);}
+
+@media (max-width:1000px){
+    .containerbox{width: auto;}
+}
+
+@media (max-width:600px){
+    .containerbox{
+        height: auto;
+        background-image:url(images/bg-pattern-top-mobile.svg),
+                        url(images/bg-pattern-bottom-mobile.svg);
+        background-size: 300px , 100vw 300px;
+    }
+    .megabox1{
+        grid-template-columns: 1fr;
+    }
+    .megabox2{
+        grid-template-columns: 1fr;
+    }
+    .rbdiv{
+        display: block;
+    }
+    .rb2{
+        left: 0px;
+    }
+    .rb3{
+        left: 0px;
+    }
+    .rb{
+        width: auto;
+        text-align: center;
+    }
+    .headbox{
+        text-align: center;
+    }
+    .headbox h1{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+}
